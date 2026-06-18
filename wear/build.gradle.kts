@@ -23,6 +23,7 @@ dependencies {
     // ViewModel + Coroutines
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
     // DataStore (best score)
     implementation("androidx.datastore:datastore-preferences:1.1.1")
     // Health Services (FC sensor)
