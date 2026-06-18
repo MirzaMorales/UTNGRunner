@@ -7,6 +7,12 @@
     <uses-sdk
         android:minSdkVersion="30"
         android:targetSdkVersion="35" />
+    <!-- Wear OS requiere estas features -->
+    <uses-feature android:name="android.hardware.type.watch" />
+    <!-- Health Services para FC -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.health.READ_HEART_RATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <queries>
         <package android:name="com.google.android.wearable.healthservices" />
@@ -21,7 +27,19 @@
     <application
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:extractNativeLibs="false" >
+        android:extractNativeLibs="false"
+        android:label="UTNG Runner"
+        android:theme="@style/Theme.WearApp.Round" >
+        <activity
+            android:name="mx.utng.utngrunner.presentation.GameActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name="androidx.health.services.client.VersionApiService"
             android:exported="true"

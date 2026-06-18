@@ -10,113 +10,149 @@
 8-->INJECTED
 9        android:targetSdkVersion="35" />
 9-->INJECTED
-10
-11    <queries>
-11-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:19:5-21:15
-12        <package android:name="com.google.android.wearable.healthservices" />
-12-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:20:9-78
-12-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:20:18-75
-13    </queries>
-14
-15    <permission
-15-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-16        android:name="mx.utng.utngrunner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-16-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-17        android:protectionLevel="signature" />
-17-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
-18
-19    <uses-permission android:name="mx.utng.utngrunner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-19-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-19-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+10    <!-- Wear OS requiere estas features -->
+11    <uses-feature android:name="android.hardware.type.watch" />
+11-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:4:5-64
+11-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:4:19-61
+12    <!-- Health Services para FC -->
+13    <uses-permission android:name="android.permission.BODY_SENSORS" />
+13-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:6:5-71
+13-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:6:22-68
+14    <uses-permission android:name="android.permission.health.READ_HEART_RATE" />
+14-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:7:5-81
+14-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:8:5-66
+15-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:8:22-63
+16
+17    <queries>
+17-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:19:5-21:15
+18        <package android:name="com.google.android.wearable.healthservices" />
+18-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:20:9-78
+18-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:20:18-75
+19    </queries>
 20
-21    <application
-21-->INJECTED
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
-23        android:debuggable="true"
-24        android:extractNativeLibs="false" >
-24-->INJECTED
-25        <service
-25-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:24:9-31:19
-26            android:name="androidx.health.services.client.VersionApiService"
-26-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:25:13-77
-27            android:exported="true"
-27-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:26:13-36
-28            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" >
-28-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:27:13-108
-29            <intent-filter>
-29-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:28:13-30:29
-30                <action android:name="hs.versionclient.BIND" />
-30-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:29:17-64
-30-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:29:25-61
-31            </intent-filter>
-32        </service>
-33
-34        <provider
-34-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-35            android:name="androidx.startup.InitializationProvider"
-35-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-36            android:authorities="mx.utng.utngrunner.androidx-startup"
-36-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-37            android:exported="false" >
-37-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-38            <meta-data
-38-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-39                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-39-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-40                android:value="androidx.startup" />
-40-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-41            <meta-data
-41-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\natzl\.gradle\caches\9.4.1\transforms\9e3ce8805929cb7b5a80b3b49de11366\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
-42                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-42-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\natzl\.gradle\caches\9.4.1\transforms\9e3ce8805929cb7b5a80b3b49de11366\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
-43                android:value="androidx.startup" />
-43-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\natzl\.gradle\caches\9.4.1\transforms\9e3ce8805929cb7b5a80b3b49de11366\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
-44            <meta-data
-44-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-45                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-45-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-46                android:value="androidx.startup" />
-46-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-47        </provider>
-48
-49        <receiver
-49-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-50            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-50-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-51            android:directBootAware="false"
-51-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-52            android:enabled="true"
-52-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-53            android:exported="true"
-53-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-54            android:permission="android.permission.DUMP" >
-54-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-55            <intent-filter>
-55-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-56                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-56-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-56-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-57            </intent-filter>
-58            <intent-filter>
-58-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-59                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-60            </intent-filter>
-61            <intent-filter>
-61-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-62                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-62-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-62-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-63            </intent-filter>
-64            <intent-filter>
-64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-65                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-66            </intent-filter>
-67        </receiver>
-68    </application>
-69
-70</manifest>
+21    <permission
+21-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+22        android:name="mx.utng.utngrunner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="mx.utng.utngrunner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:10:5-20:19
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.12.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2b0f62f292662142a81cf245ca47a40b\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+30-->INJECTED
+31        android:label="UTNG Runner"
+31-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:12:9-36
+32        android:theme="@style/Theme.WearApp.Round" >
+32-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:11:9-51
+33        <activity
+33-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:13:9-19:20
+34            android:name="mx.utng.utngrunner.presentation.GameActivity"
+34-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:13:19-60
+35            android:exported="true" >
+35-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:14:13-36
+36            <intent-filter>
+36-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:15:13-18:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:16:17-69
+37-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:16:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:17:17-77
+39-->C:\Users\natzl\AndroidStudioProjects\UTNGRunner\wear\src\main\AndroidManifest.xml:17:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <service
+43-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:24:9-31:19
+44            android:name="androidx.health.services.client.VersionApiService"
+44-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:25:13-77
+45            android:exported="true"
+45-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:26:13-36
+46            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" >
+46-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:27:13-108
+47            <intent-filter>
+47-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:28:13-30:29
+48                <action android:name="hs.versionclient.BIND" />
+48-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:29:17-64
+48-->[androidx.health:health-services-client:1.1.0-alpha03] C:\Users\natzl\.gradle\caches\9.4.1\transforms\2a1923886b69c7ff153491f579e8f50b\transformed\health-services-client-1.1.0-alpha03\AndroidManifest.xml:29:25-61
+49            </intent-filter>
+50        </service>
+51
+52        <provider
+52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+53            android:name="androidx.startup.InitializationProvider"
+53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+54            android:authorities="mx.utng.utngrunner.androidx-startup"
+54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+55            android:exported="false" >
+55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+56            <meta-data
+56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+58                android:value="androidx.startup" />
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\natzl\.gradle\caches\9.4.1\transforms\cf7200ed45c2bccee44ed96ed9753306\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\natzl\.gradle\caches\9.4.1\transforms\9e3ce8805929cb7b5a80b3b49de11366\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\natzl\.gradle\caches\9.4.1\transforms\9e3ce8805929cb7b5a80b3b49de11366\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+61                android:value="androidx.startup" />
+61-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\natzl\.gradle\caches\9.4.1\transforms\9e3ce8805929cb7b5a80b3b49de11366\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+62            <meta-data
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+63-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+64                android:value="androidx.startup" />
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+65        </provider>
+66
+67        <receiver
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+68            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+69            android:directBootAware="false"
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+70            android:enabled="true"
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+71            android:exported="true"
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+72            android:permission="android.permission.DUMP" >
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+73            <intent-filter>
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+74                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+75            </intent-filter>
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+77                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+80                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+83                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\natzl\.gradle\caches\9.4.1\transforms\6ade769580d929e2adbd1a6db9dd7722\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+84            </intent-filter>
+85        </receiver>
+86    </application>
+87
+88</manifest>
